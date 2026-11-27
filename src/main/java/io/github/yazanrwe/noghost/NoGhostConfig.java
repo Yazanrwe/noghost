@@ -15,6 +15,14 @@ import java.nio.file.Path;
  */
 public final class NoGhostConfig {
 
+    // ---- ghost hits ----------------------------------------------------------------------
+
+    /** Shorten the vanilla attack lockout that follows a click that hit nothing. ON by default. */
+    public boolean improveHits = true;
+
+    /** Ticks attacks stay locked after a missed click (vanilla: 10). */
+    public int missCooldownTicks = 0;
+
     // ---- ghost block healing -------------------------------------------------------------
 
     /** Re-request the real block state from the server when a predicted block was never confirmed. */
@@ -85,6 +93,7 @@ public final class NoGhostConfig {
         minResyncDelayTicks = clamp(minResyncDelayTicks, 0, 40);
         maxResyncDelayTicks = clamp(maxResyncDelayTicks, minResyncDelayTicks, 200);
         maxResyncsPerTick = clamp(maxResyncsPerTick, 1, 64);
+        missCooldownTicks = clamp(missCooldownTicks, 0, 10);
         breakCooldownTicks = clamp(breakCooldownTicks, 0, 10);
         placeCooldownTicks = clamp(placeCooldownTicks, 0, 10);
     }

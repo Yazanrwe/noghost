@@ -19,7 +19,8 @@ public final class NoGhost {
 
     static void init() {
         config = NoGhostConfig.loadOrCreate(FabricLoader.getInstance().getConfigDir().resolve(MOD_ID + ".json"));
-        LOGGER.info("NoGhost loaded: autoResync={}, resyncOnRubberband={}, reduceCooldowns={} (break={}, place={})",
+        LOGGER.info("NoGhost loaded: improveHits={} (miss={}), autoResync={}, resyncOnRubberband={}, reduceCooldowns={} (break={}, place={})",
+                config.improveHits, config.missCooldownTicks,
                 config.autoResync, config.resyncOnRubberband, config.reduceCooldowns,
                 config.breakCooldownTicks, config.placeCooldownTicks);
     }
