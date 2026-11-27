@@ -36,6 +36,7 @@ Client-side Fabric mod for 1.20.1 that detects and heals ghost blocks quickly.
 
 ## الحصول على الـ jar
 
+- من الريبو مباشرة: `dist/noghost-1.0.0.zip` (فكّه وطلع الـ jar منه).
 - من تبويب **Releases** في الريبو: النسخة `latest` تتبنى تلقائيًا مع كل push على `main`.
 - أو من **Actions** ← آخر build ← artifact `noghost-jar`.
 - أو محليًا (يحتاج JDK 17): `./gradlew build` والملف يطلع في `build/libs/noghost-1.0.0.jar`.
