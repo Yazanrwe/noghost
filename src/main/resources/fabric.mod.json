@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "noghost",
+  "version": "${version}",
+  "name": "NoGhost",
+  "description": "Client-side mod that detects and heals ghost blocks quickly (ping-aware resync) and can optionally trim client-side block break/place cooldowns.",
+  "authors": [
+    "Yazanrwe"
+  ],
+  "contact": {
+    "sources": "https://github.com/Yazanrwe/noghost"
+  },
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "io.github.yazanrwe.noghost.NoGhostClient"
+    ]
+  },
+  "mixins": [
+    "noghost.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "1.20.1",
+    "java": ">=17"
+  }
+}

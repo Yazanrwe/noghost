@@ -1,0 +1,26 @@
+# Gradle
+.gradle/
+build/
+out/
+
+# Loom
+run/
+remappedSrc/
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+bin/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# keep the wrapper jar
+!gradle/wrapper/gradle-wrapper.jar
